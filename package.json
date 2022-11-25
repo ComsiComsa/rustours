@@ -1,0 +1,26 @@
+{
+  "name": "rustours",
+  "version": "1.0.0",
+  "description": "Common landing page for rustours",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComsiComsa/rustours.git"
+  },
+  "keywords": [
+    "SASS",
+    "HTML"
+  ],
+  "author": "Ilia Zotov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComsiComsa/rustours/issues"
+  },
+  "homepage": "https://github.com/ComsiComsa/rustours#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
