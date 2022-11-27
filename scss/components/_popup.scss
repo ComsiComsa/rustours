@@ -11,6 +11,8 @@
   visibility: hidden;
   transition: all .3s;
 
+  backdrop-filter: blur(1rem);
+
   &:target {
     opacity: 1;
     visibility: visible;

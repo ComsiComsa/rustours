@@ -8,8 +8,30 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(small) {
+    font-size: 50%;
+  }
+
+  @include respond(medium) {
+    font-size: 56.25%;
+  }
+
+  @include respond(extraLarge) {
+    font-size: 67.5%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(medium) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }

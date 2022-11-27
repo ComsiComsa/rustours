@@ -12,3 +12,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media only screen and (max-width: $small) { @content }
+  } @else if $breakpoint == medium {
+    @media only screen and (max-width: $medium) { @content }
+  } @else if $breakpoint == large {
+    @media only screen and (max-width: $large) { @content }
+  } @else if $breakpoint == extraLarge {
+    @media only screen and (min-width: $extra-large) { @content }
+  }
+}
